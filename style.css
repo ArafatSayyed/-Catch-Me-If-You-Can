@@ -1,8 +1,10 @@
 body
 {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     text-align: center;
-    background-color: #f2f2f2;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    margin: 0;
+    padding: 40px;
 }
 
 h1
