@@ -131,3 +131,10 @@ h1
 {
     transform:translateY(-5px);
 }
+
+footer
+{
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 14px;
+}
