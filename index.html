@@ -2,25 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Click the Target</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Catch Me If You Can</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <div class="container">
-        <h1>Catch Me If You Can</h1>
-        <p>Score: ...<span id="score">0</span></p>
-        <p>Time Left: ...<span id="time">30</span> seconds</p>
-        <button id="restartBtn"> Restart Game </button>
+
+        <h1> Catch Me If You Can</h1>
+
+        <div class="info">
+
+            <div class="card">
+                <strong> Score</strong><br>
+                <span id="score">0</span>
+            </div>
+
+            <div class="card">
+                <strong> Time</strong><br>
+                <span id="time">30</span>s
+            </div>
+
+        </div>
+
+        <button id="restartBtn"> Restart Game</button>
+
         <div id="gameArea">
             <img id="box" src="target.jpg" alt="Target">
         </div>
+
     </div>
 
-    <!--Sound Effects -->
+    <!-- Sound Effects -->
     <audio id="hitSound" src="hit.mp3"></audio>
     <audio id="missSound" src="miss.mp3"></audio>
     <audio id="gameOverSound" src="gameover.mp3"></audio>
 
     <script src="script.js"></script>
+
 </body>
 </html>
