@@ -15,6 +15,7 @@ h1
     font-size: 56px;
     color: #1e293b;
     letter-spacing: 1px;
+    animation: fadeInDown 1s ease;
 }
 
 #gameArea
