@@ -8,6 +8,7 @@ let restartBtn = document.getElementById("restartBtn");
 let hitSound = document.getElementById("hitSound");
 let missSound = document.getElementById("missSound");
 let gameOverSound = document.getElementById("gameOverSound");
+let bgMusic = document.getElementById("bgMusic");
 
 let score = 0;
 let timeLeft = 30;
@@ -51,6 +52,9 @@ function endGame(message)
     gameOverSound.currentTime = 0;
     gameOverSound.play();
 
+    bgMusic.pause();
+    bgMusic.currentTime = 0;
+
     gameArea.classList.add("shake");
     setTimeout(() => gameArea.classList.remove("shake"), 300);
 
@@ -60,6 +64,8 @@ function endGame(message)
 /* Start / Restart game */
 function startGame()
 {
+    bgMusic.volume = 0.3;
+    bgMusic.play().catch(() => {});
     score = 0;
     timeLeft = 30;
     moveSpeed = 0.35;
